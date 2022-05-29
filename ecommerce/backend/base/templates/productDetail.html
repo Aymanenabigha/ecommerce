@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+{% block title  %} Details de Nos Produits {% endblock %}
+{% block content  %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <div class="alert alert-primary">
+                <h2>Details du produit n {{produits.id}}</h2>
+                <div class="row">
+                    <dd class="col-md-4">Nom</dd>
+                    <dd class="col-md-8">{{produits.name}}</dd>
+                    <dd class="col-md-4">Catégorie</dd>
+                    <dd class="col-md-8">{{produits.category}}</dd>
+                    <dd class="col-md-4">Prix</dd>
+                    <dd class="col-md-8">{{produits.price}}</dd>
+                    <dd class="col-md-4">Quantité</dd>
+                    <dd class="col-md-8">{{produits.countInStock}}</dd>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
